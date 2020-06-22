@@ -1,0 +1,112 @@
+.simple-search {
+  display: inline-flex;
+  position: relative;
+  font-size: 12px;
+  width: 300px;
+  max-width: 100%;
+}
+
+.simple-search-input {
+  border-radius: 4em;
+  padding: 8px 45px 8px 17px;
+  box-shadow: none;
+  outline: none;
+  background-color: transparent;
+  border-style: solid;
+  transition: background-color .2s, border .2s;
+  border-width: 0;
+  flex-grow: 1;
+  width: 0;
+  border: 2px solid rgba(152,152,152,.2);
+  font-size: 14px;
+  -webkit-appearance: none;
+  color: rgba(152,152,152,1);
+}
+
+.simple-search-input::-webkit-input-placeholder {
+  color: rgba(152,152,152,.2);
+}
+.simple-search-input::-moz-placeholder {
+  color: rgba(152,152,152,.2);
+}
+.simple-search-input:-ms-input-placeholder {
+  color: rgba(152,152,152,.2);
+}
+.simple-search-input:-moz-placeholder {
+  color: rgba(152,152,152,.2);
+}
+
+.simple-search-input::-ms-clear {  
+  display: none; width : 0; height: 0; 
+}
+.simple-search-input::-ms-reveal {  
+  display: none; width : 0; height: 0; 
+}
+
+/* clears the 'X' from Chrome */
+.simple-search-input::-webkit-search-decoration,
+.simple-search-input::-webkit-search-cancel-button,
+.simple-search-input::-webkit-search-results-button,
+.simple-search-input::-webkit-search-results-decoration { 
+  display: none; 
+}
+
+.simple-search-input:hover,
+.simple-search-input:focus {
+  border-color: rgba(152,152,152,.4);
+}
+
+
+.simple-search-button {
+  position: absolute;
+  width: 45px;
+  top: 0;
+  bottom: 0;
+  transition: background-color .2s;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  box-shadow: none;
+  -webkit-appearance: none;
+  text-decoration: none;
+  border: 0;
+  background-color: transparent;
+  right: 0;
+}
+
+.simple-search-icon {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-60%, -55%);
+}
+
+.simple-search-icon > g {
+  fill: rgba(152,152,152,.3);
+}
+
+.Tabs .tabsList {
+  list-style: none;
+  padding: 0;
+  margin: 5px;
+}
+.Tabs .tabsList .tabItem {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid gray;
+  margin-right: 5px;
+  background: gray;
+  color: lightgray;
+  cursor: pointer;
+}
+.Tabs .tabsList .tabItem.active {
+  background: #FFF;
+  color: #000;
+}
+.Tabs .tabPanel {
+  padding: 20px;
+  border: 1px solid gray;
+  max-width: 800px;
+}
+
